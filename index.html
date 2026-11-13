@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodieRest - Restaurant Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="#home">
+                <i class="fa-solid fa-utensils"></i>
+                Foodie<span>Rest</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Reservation Button -->
+                <a href="#contact" class="btn btn-danger reserve-btn">
+                    <i class="fa-solid fa-utensils"></i>
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <p class="hero-title">WELCOME TO FOODIEREST</p>
+
+                <h1>
+                    Delicious Food <br>
+                    For <span>Food Lovers</span>
+                </h1>
+
+                <p class="hero-description">
+                    Enjoy a variety of tasty and freshly prepared dishes
+                    in a cozy and friendly environment.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-danger">
+                        <i class="fa-solid fa-utensils"></i>
+                        Our Menu
+                    </a>
+
+                    <a href="#about" class="btn btn-outline-light">
+                        <i class="fa-solid fa-play"></i>
+                        Watch Video
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Chef Image -->
+                <div class="col-lg-5">
+
+                    <div class="about-img">
+
+                        <img src="images/chef.png"
+                             alt="FoodieRest Restaurant Chef"
+                             class="img-fluid">
+
+                    </div>
+
+                </div>
+
+                <!-- About Content -->
+                <div class="col-lg-7">
+
+                    <div class="about-content">
+
+                        <p class="about-subtitle">ABOUT US</p>
+
+                        <h2>
+                            A Little About <br>
+                            Our <span>Restaurant</span>
+                        </h2>
+
+                        <p class="about-description">
+                            FoodieRest is a cozy restaurant that serves delicious,
+                            high-quality food made with fresh ingredients.
+                            We focus on great taste, warm service, and a
+                            comfortable dining experience for everyone.
+                        </p>
+
+                        <!-- Restaurant Features -->
+                        <div class="row">
+
+                            <div class="col-4">
+
+                                <div class="about-feature">
+
+                                    <div class="feature-icon">
+                                        <i class="fa-solid fa-leaf"></i>
+                                    </div>
+
+                                    <p>Fresh Ingredients</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-4">
+
+                                <div class="about-feature">
+
+                                    <div class="feature-icon">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+
+                                    <p>Expert Chefs</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-4">
+
+                                <div class="about-feature">
+
+                                    <div class="feature-icon">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+
+                                    <p>Friendly Service</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="btn btn-danger about-btn">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="menu-heading text-center">
+
+                <p class="menu-subtitle">OUR MENU</p>
+
+                <h2>
+                    Popular <span>Dishes</span>
+                </h2>
+
+                <p class="menu-description">
+                    Explore our most loved and best-selling dishes.
+                </p>
+
+            </div>
+
+            <!-- Food Cards -->
+            <div class="row g-4">
+
+                <!-- Food Card 1 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="food-card">
+
+                        <img src="images/food1.png"
+                             alt="Classic Burger"
+                             class="img-fluid">
+
+                        <div class="food-card-content">
+
+                            <h3>Classic Burger</h3>
+
+                            <p>
+                                A juicy grilled patty with fresh veggies
+                                and special sauce.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <h4>$6.99</h4>
+
+                                <a href="#contact" class="btn btn-danger">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Food Card 2 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="food-card">
+
+                        <img src="images/food2.png"
+                             alt="Chicken Pasta"
+                             class="img-fluid">
+
+                        <div class="food-card-content">
+
+                            <h3>Chicken Pasta</h3>
+
+                            <p>
+                                Creamy and flavorful pasta
+                                with grilled chicken.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <h4>$8.99</h4>
+
+                                <a href="#contact" class="btn btn-danger">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Food Card 3 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="food-card">
+
+                        <img src="images/food3.png"
+                             alt="Grilled Chicken"
+                             class="img-fluid">
+
+                        <div class="food-card-content">
+
+                            <h3>Grilled Chicken</h3>
+
+                            <p>
+                                Tender grilled chicken served
+                                with fresh salad.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <h4>$9.99</h4>
+
+                                <a href="#contact" class="btn btn-danger">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Food Card 4 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="food-card">
+
+                        <img src="images/food4.png"
+                             alt="Cheese Pizza"
+                             class="img-fluid">
+
+                        <div class="food-card-content">
+
+                            <h3>Cheese Pizza</h3>
+
+                            <p>
+                                Hot and cheesy pizza with
+                                fresh toppings.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <h4>$8.99</h4>
+
+                                <a href="#contact" class="btn btn-danger">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+
+                    <div class="contact-info">
+
+                        <p class="contact-subtitle">CONTACT US</p>
+
+                        <h2>
+                            Get in <span>Touch</span>
+                        </h2>
+
+                        <p class="contact-description">
+                            Have a question, feedback or reservation request?
+                            We'd love to hear from you!
+                        </p>
+
+                        <!-- Phone Number -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <p>+880 1234 567 890</p>
+
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <p>info@foodierest.com</p>
+
+                        </div>
+
+                        <!-- Address -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <p>CUET, Chittagong, Bangladesh</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-4">
+
+                    <div class="contact-form">
+
+                        <form>
+
+                            <div class="mb-3">
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Your Name"
+                                    aria-label="Your Name"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Your Email"
+                                    aria-label="Your Email"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <textarea
+                                    name="message"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Your Message"
+                                    aria-label="Your Message"
+                                    required></textarea>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-danger contact-btn">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Restaurant Image -->
+                <div class="col-lg-4">
+
+                    <div class="contact-image">
+
+                        <img src="images/exterior.png"
+                             alt="FoodieRest Restaurant Exterior"
+                             class="img-fluid">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Logo and Description -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="footer-about">
+
+                        <a href="#home" class="footer-logo">
+                           <span><i class="fa-solid fa-utensils"></i></span>
+                            Foodie<span>Rest</span>
+                        </a>
+
+                        <p>
+                            Delicious food, great ambiance, and
+                            wonderful service — all in one place.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <div class="footer-links">
+
+                        <h3>Quick Links</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+
+                            <li>
+                                <a href="#menu">Menu</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="footer-social">
+
+                        <h3>Follow Us</h3>
+
+                        <div class="social-icons">
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+
+                            <a href="#" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-newsletter">
+
+                        <h3>Newsletter</h3>
+
+                        <form class="newsletter-form">
+
+                            <input
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="Enter your email"
+                                aria-label="Enter your email"
+                                required>
+
+                            <button type="submit" aria-label="Subscribe">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 FoodieRest. All Rights Reserved.
+                </p>
+
+                <div class="footer-legal">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms of Service</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

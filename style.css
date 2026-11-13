@@ -1,0 +1,1043 @@
+
+/* Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #e50914;
+    --secondary-color: #111111;
+    --text-color: #111111;
+    --white-color: #ffffff;
+    --light-bg: #fff5f5;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--white-color);
+    overflow-x: hidden;
+}
+
+/* All Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* All Links */
+a {
+    text-decoration: none;
+}
+
+/* All Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Form Elements */
+button,
+input,
+textarea {
+    font-family: var(--font-family);
+}
+
+/* Navbar */
+.main-navbar {
+    background-color: #111111 !important;
+    padding: 10px 0;
+    border-bottom: 1px solid #333333;
+}
+
+/* Website Logo */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white-color) !important;
+}
+
+.logo i {
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 27px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+/* Navigation Menu */
+.main-navbar .navbar-nav {
+    gap: 25px;
+}
+
+/* Navigation Links */
+.main-navbar .nav-link {
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Active Navigation Link */
+.main-navbar .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Navigation Hover */
+.main-navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Navigation Underline */
+.main-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.main-navbar .nav-link:hover::after,
+.main-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* Reserve Button */
+.reserve-btn {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 9px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Mobile Navbar Button */
+.main-navbar .navbar-toggler {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.main-navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    background-image:
+        linear-gradient(
+            to right,
+            #080604 0%,
+            rgba(8, 6, 4, 0.98) 25%,
+            rgba(8, 6, 4, 0.85) 40%,
+            rgba(8, 6, 4, 0.35) 65%,
+            rgba(8, 6, 4, 0.05) 100%
+        ),
+        url("images/interior.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 55px 0;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 550px;
+}
+
+/* Hero Subtitle */
+.hero-title {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+    color: var(--white-color);
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+/* Hero Heading Highlight */
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+/* Hero Description */
+.hero-description {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 430px;
+    margin-bottom: 22px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Hero Button Common Design */
+.hero-buttons .btn {
+    padding: 9px 17px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+/* Our Menu Button */
+.hero-buttons .btn-danger {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Our Menu Hover */
+.hero-buttons .btn-danger:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Watch Video Button */
+.hero-buttons .btn-outline-light:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+/* About Section */
+.about-section {
+    padding: 65px 0;
+    background-color: var(--white-color);
+}
+
+/* About Image */
+.about-img {
+    position: relative;
+    padding: 10px 15px 15px;
+    z-index: 1;
+}
+
+/* About Image Shape */
+.about-img::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 85%;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: 0;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+/* Chef Image */
+.about-img img {
+    width: 100%;
+    height: 306px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* About Content */
+.about-content {
+    padding-left: 25px;
+}
+
+/* About Subtitle */
+.about-subtitle {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* About Heading */
+.about-content h2 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+/* About Heading Highlight */
+.about-content h2 span {
+    color: var(--primary-color);
+}
+
+/* About Description */
+.about-description {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* About Features */
+.about-feature {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff0f0;
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+/* Feature Icon Hover */
+.about-feature:hover .feature-icon {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Feature Text */
+.about-feature p {
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Read More Button */
+.about-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Read More Hover */
+.about-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+/* Menu Heading */
+.menu-heading {
+    margin-bottom: 30px;
+}
+
+/* Menu Subtitle */
+.menu-subtitle {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Menu Title */
+.menu-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Heading Lines */
+.menu-heading h2::before,
+.menu-heading h2::after {
+    content: "";
+    width: 105px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+}
+
+/* Menu Title Highlight */
+.menu-heading h2 span {
+    color: var(--primary-color);
+}
+
+/* Menu Description */
+.menu-description {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Food Card */
+.food-card {
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+/* Food Card Hover */
+.food-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Food Image */
+.food-card img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Food Image Hover */
+.food-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Food Card Content */
+.food-card-content {
+    padding: 13px 15px 15px;
+}
+
+/* Food Name */
+.food-card-content h3 {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Food Description */
+.food-card-content p {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Food Card Bottom */
+.food-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+/* Food Price */
+.food-card-bottom h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Order Button */
+.food-card-bottom .btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 7px;
+    padding: 7px 11px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Order Button Hover */
+.food-card-bottom .btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: var(--white-color);
+}
+
+/* Contact Information */
+.contact-info {
+    padding: 5px 0;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+/* Contact Subtitle */
+.contact-subtitle {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Contact Heading */
+.contact-info h2 {
+    color: var(--secondary-color);
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+/* Contact Heading Highlight */
+.contact-info h2 span {
+    color: var(--primary-color);
+}
+
+/* Contact Description */
+.contact-description {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Contact Icon */
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* Contact Item Text */
+.contact-item h4 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Contact Item Details */
+.contact-item p {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 0;
+    height: 100%;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Form Heading */
+.contact-form h3 {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Form Input */
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+/* Input Focus */
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* Message Field */
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Contact Button */
+.contact-btn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Contact Button Hover */
+.contact-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Restaurant Image */
+.contact-image {
+    width: 100%;
+    height: 223px;
+    min-height: 223px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 40px 0 0;
+    background-color: #111111;
+    color: var(--white-color);
+}
+
+/* Footer About */
+.footer-about {
+    margin-bottom: 20px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Footer Logo Highlight */
+.footer-logo span {
+    color: var(--primary-color);
+}
+
+/* Footer Description */
+.footer-about p {
+    color: #bbbbbb;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* Footer Column Heading */
+.footer-section h3 {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-bottom: 20px;
+}
+
+/* Footer Link List */
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer Link */
+.footer-links ul li {
+    margin-bottom: 7px;
+}
+
+/* Footer Link Anchor */
+.footer-links ul li a {
+    color: #bbbbbb;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+/* Footer Link Hover */
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+/* Footer Social */
+.footer-social {
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social Icon Link */
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    color: var(--white-color);
+    border-radius: 50%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Social Icon Hover */
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-4px);
+}
+
+/* Footer Newsletter */
+.footer-newsletter {
+    margin-bottom: 20px;
+}
+
+/* Newsletter Description */
+.footer-newsletter p {
+    color: #bbbbbb;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Newsletter Input */
+.newsletter-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    background-color: #292929;
+    color: var(--white-color);
+    border: 1px solid #444444;
+    border-radius: 7px;
+    outline: none;
+    font-size: 12px;
+}
+
+/* Newsletter Input Focus */
+.newsletter-form input:focus {
+    border-color: var(--primary-color);
+}
+
+/* Newsletter Button */
+.newsletter-form button {
+    padding: 10px 13px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Newsletter Button Hover */
+.newsletter-form button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+/* Copyright Text */
+.footer-bottom p {
+    color: #aaaaaa;
+    font-size: 10px;
+    margin: 0;
+}
+
+/* Footer Legal Links */
+.footer-legal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* Footer Legal Link */
+.footer-legal a {
+    color: #aaaaaa;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+/* Footer Legal Hover */
+.footer-legal a:hover {
+    color: var(--primary-color);
+}
+
+/* Tablet Responsive */
+@media (max-width: 991px) {
+
+    .main-navbar .navbar-nav {
+        gap: 5px;
+    }
+
+    .main-navbar .nav-link {
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .about-section,
+    .menu-section,
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .about-content {
+        padding-left: 10px;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+
+    .menu-heading h2 {
+        gap: 15px;
+    }
+
+    .menu-heading h2::before,
+    .menu-heading h2::after {
+        width: 75px;
+    }
+
+    .food-card img {
+        height: 160px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+
+    .main-navbar {
+        padding: 8px 0;
+    }
+
+    .main-navbar .navbar-nav {
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    .main-navbar .nav-link::after {
+        display: none;
+    }
+
+    .reserve-btn {
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        min-height: 400px;
+        padding: 50px 0;
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .about-section,
+    .menu-section,
+    .contact-section {
+        padding: 45px 0;
+    }
+
+    .about-img {
+        margin-bottom: 25px;
+    }
+
+    .about-img img {
+        height: 300px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-feature {
+        padding: 10px 3px;
+    }
+
+    .menu-heading {
+        margin-bottom: 25px;
+    }
+
+    .menu-heading h2 {
+        font-size: 27px;
+        gap: 10px;
+    }
+
+    .menu-heading h2::before,
+    .menu-heading h2::after {
+        width: 35px;
+    }
+
+    .food-card img {
+        height: 180px;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .contact-image {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .footer-section {
+        padding-top: 35px;
+    }
+
+    .footer-section .row {
+        row-gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .about-img img {
+        height: 250px;
+    }
+
+    .menu-heading h2 {
+        font-size: 23px;
+        gap: 8px;
+    }
+
+    .menu-heading h2::before,
+    .menu-heading h2::after {
+        width: 22px;
+    }
+
+    .food-card img {
+        height: 160px;
+    }
+
+    .food-card-content {
+        padding: 12px;
+    }
+
+    .food-card-bottom .btn {
+        padding: 7px 9px;
+        font-size: 11px;
+    }
+
+    .footer-legal {
+        gap: 10px;
+    }
+}
